@@ -1,29 +1,34 @@
 * {
     margin: 0;
-    padding: 0;
-    border: 0;
 }
 
 body{
     background-color: black;
 }
 
-header > ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+header{
+    display: flex;
+    align-items: center;
     overflow: hidden;
-    background-color: white;
+    background-color: blue;
 }
 
+img{
+    height: 5%;
+    margin-left: 10%;
+}
+
+ul{
+    margin-left: 48%;
+}
 
 ul > a{
-    display: inline-block;
-    text-align: center;
-    padding: 14px 26px;
-    text-decoration: none;
+    color: white;
+    padding: 14px;
+    font-size: 22px;
 }
 
 ul > a:hover{
-    background-color: blue;
+    background-color: red;
+    cursor: pointer;
 }
