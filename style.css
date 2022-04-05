@@ -145,11 +145,16 @@ ul > a:hover::before {
     justify-content: center;
 }
 
-.infos_box{
+.infos_box{    
     margin: 10%;
     width: 1920px;
     height: 540px;
     background-color:yellow;
+}
+
+.infos_box > p{
+    margin-top: 1%;
+    margin-left: 41%;
 }
 
 .info-btn{
@@ -170,7 +175,6 @@ ul > a:hover::before {
     font-weight: 600;
     line-height: normal;
     outline: none;
-    text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
@@ -194,6 +198,7 @@ ul > a:hover::before {
     box-shadow: none;
     transform: translateY(0);
 }
+/*INFOS BOX*/
 
 /*FOOTER*/
 .hr_footer{
