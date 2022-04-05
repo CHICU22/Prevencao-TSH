@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #1f1f1f;
 }
 
 /*NAVBAR*/
@@ -14,18 +14,20 @@ header{
     background-color: white;
 }
 
-img{
+.logo__header{
     margin-left: 10%;
 }
 
 ul{
-    margin-left: 52%;
+    margin-left: 48%;
 }
 
 ul > a{
     position: relative;
     color: black;
-    font-size: 22px;    
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 12px;   
 }
 
 ul > a:hover{
@@ -62,14 +64,17 @@ ul > a:hover::before {
 
 /*TÍTULO*/
 .titulo__informativo{
+    color: white;
+    margin-top: 5%;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo__informativo > h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    margin-top: 5%;
-    font-size: 25px;
 }
-
 
 /*TITULO*/
 
@@ -108,3 +113,40 @@ ul > a:hover::before {
     }
 }
 /*VIDEO CONTAINER*/
+
+/*JOGO*/
+.jogo__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogo_box{
+    margin: 10%;
+    width: 1920px;
+    height: 1080px;
+    background-color: beige;
+}
+/*JOGO*/
+
+/*FOOTER*/
+hr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer__container > p{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
