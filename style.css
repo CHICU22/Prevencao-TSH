@@ -76,6 +76,14 @@ ul > a:hover::before {
     justify-content: center;
 }
 
+.hr_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+}
 /*TITULO*/
 
 /*VIDEO CONTAINER*/
@@ -130,7 +138,7 @@ ul > a:hover::before {
 /*JOGO*/
 
 /*FOOTER*/
-hr{
+.hr_footer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,9 +148,14 @@ hr{
 
 .footer__container{
     display: flex;
-    align-items: center;
     justify-content: center;
     color: white;
+}
+
+.instagram_icon{
+    height: 20px;
+    margin-bottom: 1%;
+    margin-top: 20px;
 }
 
 .footer__container > p{
