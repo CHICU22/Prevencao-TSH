@@ -154,15 +154,15 @@ ul > a:hover::before {
 
 .info-btn{
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 24%;
     margin-left: 46%;
-    width: 170px;
-    height: 50px;
+    width: 180px;
+    height: 55px;
     appearance: none;
     background-color: transparent;
     border: 2px solid #1A1A1A;
-    border-radius: 15px;
+    border-radius: 20px;
     box-sizing: border-box;
     color: #3B3B3B;
     cursor: pointer;
