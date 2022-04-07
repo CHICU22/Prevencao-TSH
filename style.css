@@ -85,13 +85,6 @@ ul > a:hover::before {
     align-items: center;
     grid-template-columns: 1.1fr 1fr;
     margin-left: 11%;
-    margin-top: 10%;
-}
-
-.video_box{
-    width: 960px;
-    height: 580px;
-    background-color: aqua;
 }
 
 .text_box{
@@ -110,7 +103,7 @@ ul > a:hover::before {
 }
 
 .text_box > h2{
-    margin-top: 15%;
+    margin-top: 6%;
     margin-left: 2%;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -121,7 +114,6 @@ ul > a:hover::before {
     margin-top: 2%;
     margin-left: 2%;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     color: white;
 }
 
@@ -407,15 +399,8 @@ ul > a:hover::before {
     .video__container{
         display: inline-block;
         align-items: center;    
-        margin-top: 10%;
     }
     
-    .video_box{
-        width: 546px;
-        height: 480px;
-        background-color: aqua;
-    }
-
     .text_box{
         width: 546px;
         height: 240px;
@@ -443,7 +428,6 @@ ul > a:hover::before {
         margin-top: 2%;
         margin-left: 2%;
         font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
         color: white;
     }
     /*VIDEO BOXES*/
@@ -653,7 +637,7 @@ ul > a:hover::before {
 /*TELEMÓVEL*/
 
 /*TABLET*/
-@media (max-width: 2080px){
+@media (max-width: 1920px){
     /*Header Título*/
     .titulo__informativo{
         color: white;
@@ -680,26 +664,22 @@ ul > a:hover::before {
 
     /*VIDEO BOXES*/
     .video__container{
-        display: inline-block;
-        align-items: center;    
-        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        align-items: center; 
+        margin-top: 2%;   
     }
     
-    .video_box{
-        width: 1620px;
-        height: 580px;
-        background-color: aqua;
-    }
-
     .text_box{
-        width: 1620px;
+        width: 650px;
         height: 240px;
         background-color: black;
         border-radius: 20px;
+        margin-top: 12%;
     }
     
     .text_box:hover{
-        width: 1520px;
+        width: 650px;
         height: 250px;
         box-shadow: 5px 10px 8px #2e2e2e;
         transition: box-shadow 1s, width 1s, height 1s;
@@ -707,7 +687,7 @@ ul > a:hover::before {
     }
     
     .text_box > h2{
-        padding-top: 5%;
+        padding-top: 2%;
         margin-left: 2%;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
@@ -718,7 +698,6 @@ ul > a:hover::before {
         margin-top: 2%;
         margin-left: 2%;
         font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
         color: white;
     }
     /*VIDEO BOXES*/
@@ -792,7 +771,23 @@ ul > a:hover::before {
         box-shadow: none;
         transform: translateY(0);
     }
-    
+
+    /*JOGO*/
+    .jogo__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jogo_box{
+        margin-top: 10%;
+        width: 1700px;
+        height: 1080px;
+        background-color: beige;
+    }
+/*JOGO*/
+
+    /*INFO PAGE*/
     .instituicoes_container{
         margin-top: 6%;
     }
@@ -815,111 +810,117 @@ ul > a:hover::before {
     }
     /*INFOS BOX*/
 
-/*INFO PAGE*/
-.info-page{
-    display: grid;
-    grid-template-columns: 0.4fr 0.4fr 0.4fr;
-    width: 2640px;
-    height: 800px;
-    background-color:white;
-    border-radius: 20px;
-    margin: 12%;
-}
+    /*INFO PAGE*/
+    .info-page{
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr;
+        width: 2640px;
+        height: 800px;
+        background-color:white;
+        border-radius: 20px;
+        margin: 12%;
+    }
 
-.info-page > h1{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 2%;
-    margin-top: 2%;
-}
+    .info-page > h1{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
 
-.apf-info > h1{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 6%;
-    margin-top: 4%;
-}
+    .apf-info > h1{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 6%;
+        margin-top: 4%;
+    }
 
-.apf-info > h2{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 6%;
-    margin-top: 4%;
-}
+    .apf-info > h2{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 6%;
+        margin-top: 4%;
+    }
 
-.apf-info > a{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    text-decoration: none;
-    margin-left: 6%;
-    margin-top: 3%;
-}
+    .apf-info > a{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-left: 6%;
+        margin-top: 3%;
+        font-size: 13px;
+    }
 
-.apf-info > p{
-    margin-top: 4%;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    text-decoration: none;
-    margin-left: 6%;
-    margin-bottom: 4%;
-}
+    .apf-info > p{
+        margin-top: 4%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-left: 6%;
+        margin-bottom: 4%;
+        font-size: 13px;
+    }
 
-.psp-info > h2{
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 15%;
-    margin-left: 6%;
-}
+    .psp-info > h2{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 16%;
+        margin-left: 6%;
+    }
 
-.psp-info > a{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    text-decoration: none;
-    margin-top: 3%;
-    margin-left: 6%;
-}
+    .psp-info > a{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-top: 3%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
 
-.psp-info > p{
-    margin-top: 4%;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 4%;
-    margin-left: 6%;
-}
+    .psp-info > p{
+        margin-top: 4%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-bottom: 4%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
 
-.judiciaria-info > h2{
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 15%;
-    margin-left: 6%;
-}
+    .judiciaria-info > h2{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 16%;
+        margin-left: 6%;
+    }
 
-.judiciaria-info > a{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    text-decoration: none;
-    margin-top: 3%;
-    margin-left: 6%;
-}
+    .judiciaria-info > a{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-top: 3%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
 
-.judiciaria-info > p{
-    margin-top: 4%;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 4%;
-    margin-left: 6%;
-}
+    .judiciaria-info > p{
+        margin-top: 4%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-bottom: 4%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
 
-.apf-mapa{
-    width: 445px;
-    margin-left: 6%;
-}
+    .apf-mapa{
+        width: 430px;
+        margin-left: 6%;
+    }
 
-.psp-mapa{
-    width: 445px;
-    margin-left: 6%;
-}
+    .psp-mapa{
+        width: 430px;
+        margin-left: 6%;
+    }
 
-.judiciaria-mapa{
-    width: 445px;
-    margin-left: 6%;
-}
+    .judiciaria-mapa{
+        width: 430px;
+        margin-left: 6%;
+    }
     
 }
