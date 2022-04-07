@@ -114,12 +114,13 @@ ul > a:hover::before {
     height: 260px;
     box-shadow: 5px 10px 8px #2e2e2e;
     transition: box-shadow 1s, width 1s, height 1s;
+    transition-timing-function: ease-out;
 }
 
 .text_box > h2{
     margin-top: 15%;
     margin-left: 2%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: white;
 }
@@ -169,31 +170,38 @@ ul > a:hover::before {
     justify-content: center;
 }
 
-.infos_box{    
+.infos_box{   
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
     margin: 10%;
     width: 1920px;
     height: 540px;
-    background-color:black;
+    background-color:white;
     border-radius: 20px;
 }
 
 .infos_box > h1{
-    font-family: 'Roboto', sans-serif;
-    color:white;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:black;    
     margin-top: 2%;
-    margin-left: 27%;
+}
+
+.infos_box:hover{
+    transition: box-shadow 1s;
+    box-shadow: rgba(184, 184, 184, 0.25) 0 8px 15px;
 }
 
 .info-btn{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    margin-top: 21%;
-    margin-left: 46%;
+    margin-top: 63%;
     width: 180px;
     height: 55px;
     appearance: none;
     background-color: white;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 20px;
     box-sizing: border-box;
     color: #3B3B3B;
@@ -215,7 +223,7 @@ ul > a:hover::before {
 }
 
 .info-btn:hover {
-    color: #fff;
+    color: white;
     background-color: black;
     box-shadow: rgba(184, 184, 184, 0.25) 0 8px 15px;
     transform: translateY(-2px);
@@ -224,6 +232,27 @@ ul > a:hover::before {
 .info-btn:active {
     box-shadow: none;
     transform: translateY(0);
+}
+
+.instituicoes_container{
+    margin-top: 6%;
+}
+
+.logo_psp{
+    margin-right: 40px;
+    margin-bottom: 25px;
+    width: 200px;
+    height: 100px;
+}
+
+.logo_judiciaria{
+    width: 150px;
+    height: 150px;
+}
+
+.logo_apf{
+    width: 250px;
+    height: 140px;
 }
 /*INFOS BOX*/
 
@@ -238,18 +267,133 @@ ul > a:hover::before {
 
 .footer__container{
     display: flex;
-    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
     color: white;
 }
 
-.instagram_icon{
-    height: 20px;
-    margin-bottom: 1%;
+.social_media{
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
+.social_icons{
+    padding: 5px;
+    height: 20px;
+}
+
 .footer__container > p{
+    margin-top: 15px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
+}
+/*FOOTER*/
+
+/*INFO PAGE*/
+.info-page{
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr;
+    width: 2640px;
+    height: 800px;
+    background-color:white;
+    border-radius: 20px;
+    margin: 12%;
+}
+
+.info-page > h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.apf-info > h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 6%;
+    margin-top: 4%;
+}
+
+.apf-info > h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 6%;
+    margin-top: 4%;
+}
+
+.apf-info > a{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-left: 6%;
+    margin-top: 3%;
+}
+
+.apf-info > p{
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-left: 6%;
+    margin-bottom: 4%;
+}
+
+.psp-info > h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15%;
+    margin-left: 6%;
+}
+
+.psp-info > a{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.psp-info > p{
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 4%;
+    margin-left: 6%;
+}
+
+.judiciaria-info > h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15%;
+    margin-left: 6%;
+}
+
+.judiciaria-info > a{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+.judiciaria-info > p{
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 4%;
+    margin-left: 6%;
+}
+
+.apf-mapa{
+    width: 500px;
+    margin-left: 6%;
+}
+
+.psp-mapa{
+    width: 500px;
+    margin-left: 6%;
+}
+
+.judiciaria-mapa{
+    width: 500px;
+    margin-left: 6%;
 }
