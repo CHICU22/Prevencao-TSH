@@ -128,9 +128,9 @@ ul > a:hover::before {
 
 .jogo_box{
     margin-top: 10%;
-    width: 1920px;
-    height: 1080px;
-    background-color: beige;
+    width: 1500px;
+    height:480px;
+    background-color: black;
 }
 /*JOGO*/
 
@@ -145,7 +145,6 @@ ul > a:hover::before {
     display: flex;
     align-items: center;
     flex-direction: column; 
-    margin: 10%;
     width: 1920px;
     height: 540px;
     background-color:white;
@@ -163,6 +162,24 @@ ul > a:hover::before {
     transition: box-shadow 1s;
     box-shadow: rgba(184, 184, 184, 0.25) 0 8px 15px;
 }
+
+.warning{
+    width: 200px;
+    height: 200px;
+    animation: beat 0.5s infinite alternate; 
+}
+
+@keyframes beat{
+    0% {
+        -webkit-transform:scale(0.5);
+        transform:scale(0.5);
+    }
+    100% {
+        -webkit-transform:scale(0.7);
+        transform:scale(0.7);
+    }
+}
+
 
 .info-btn{
     font-family: 'Montserrat', sans-serif;
@@ -203,26 +220,6 @@ ul > a:hover::before {
 .info-btn:active {
     box-shadow: none;
     transform: translateY(0);
-}
-
-/*INFOSBOX*/
-.instituicoes_container{
-    margin-top: 6%;
-}
-
-.logo_psp{
-    width: 200px;
-    height: 100px;
-}
-
-.logo_judiciaria{
-    width: 150px;
-    height: 150px;
-}
-
-.logo_apf{
-    width: 250px;
-    height: 140px;
 }
 /*INFOS BOX*/
 
@@ -505,27 +502,6 @@ ul > a:hover::before {
     /*INFO PAGE*/
     
     /*INFO PAGE*/
-    .instituicoes_container{
-        margin-top: 6%;
-    }
-    
-    .logo_psp{
-        margin-right: 30px;
-        margin-top: 150px;
-        width: 90px;
-        height: 30px;
-    }
-    
-    .logo_judiciaria{
-        width: 75px;
-        height: 75px;
-    }
-    
-    .logo_apf{
-        width: 125px;
-        height: 70px;
-    }
-
     .info-page{
         display: flex;
         flex-direction: column;
@@ -635,8 +611,340 @@ ul > a:hover::before {
 }
 /*TELEMÓVEL*/
 
-/*TABLET*/
+/*PC*/
 @media (max-width: 1920px){
+    /*Header Título*/
+    .titulo__informativo{
+        color: white;
+        margin-top: 5%;
+        font-size: 32px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .titulo__informativo > h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hr_titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 20%;
+        width: 60%;
+    }
+    /*Header Título*/
+
+    /*VIDEO BOXES*/
+    .video__container{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        align-items: center; 
+        margin-top: 2%;   
+    }
+    
+    .text_box{
+        width: 650px;
+        height: 240px;
+        background-color: black;
+        border-radius: 20px;
+        margin-top: 12%;
+    }
+    
+    .text_box:hover{
+        width: 650px;
+        height: 250px;
+        box-shadow: 5px 10px 8px #2e2e2e;
+        transition: box-shadow 1s, width 1s, height 1s;
+        transition-timing-function: ease-out;
+    }
+    
+    .text_box > h2{
+        padding-top: 2%;
+        margin-left: 2%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .text_box > p{
+        margin-top: 2%;
+        margin-left: 2%;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    /*VIDEO BOXES*/
+
+    .informacoes__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .infos_box{   
+        display: flex;
+        align-items: center;
+        margin: 10%;
+        width: 750px;
+        height: 340px;
+        background-color:white;
+        border-radius: 20px;
+    }
+    
+    .infos_box > h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color:black;
+        margin-top: 2%;   
+    }
+    
+    .infos_box:hover{
+        transition: box-shadow 1s;
+        box-shadow: rgba(184, 184, 184, 0.25) 0 8px 15px;
+    }
+    
+    .info-btn{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        width: 180px;
+        height: 55px;
+        margin-top: 10%;
+        appearance: none;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-sizing: border-box;
+        color: #3B3B3B;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        line-height: normal;
+        outline: none;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform;
+    }
+    
+    .info-btn:disabled {
+        pointer-events: none;
+    }
+    
+    .info-btn:hover {
+        color: white;
+        background-color: black;
+        box-shadow: rgba(184, 184, 184, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+    
+    .info-btn:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    /*JOGO*/
+    .jogo__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jogo_box{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .jogo_box > iframe{
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+    .jogo_box > h1{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 5%;
+        color: white;
+        margin-left: 3%;
+    }
+
+    .jogo_box > p{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 2%;
+        color: white;
+        margin-left: 3%;
+    }
+
+/*JOGO*/
+
+    /*INFO PAGE*/
+    .info-page{
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr 0.4fr;
+        width: 2640px;
+        height: 800px;
+        background-color:white;
+        border-radius: 20px;
+        margin: 12%;
+    }
+
+    .info-page > h1{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .apf-info > h1{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 6%;
+        margin-top: 4%;
+    }
+
+    .apf-info > h2{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 6%;
+        margin-top: 4%;
+    }
+
+    .apf-info > a{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-left: 6%;
+        margin-top: 3%;
+        font-size: 13px;
+    }
+
+    .apf-info > p{
+        margin-top: 4%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-left: 6%;
+        margin-bottom: 4%;
+        font-size: 13px;
+    }
+
+    .psp-info > h2{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 16%;
+        margin-left: 6%;
+    }
+
+    .psp-info > a{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-top: 3%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
+
+    .psp-info > p{
+        margin-top: 4%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-bottom: 4%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
+
+    .judiciaria-info > h2{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 16%;
+        margin-left: 6%;
+    }
+
+    .judiciaria-info > a{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-top: 3%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
+
+    .judiciaria-info > p{
+        margin-top: 4%;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-bottom: 4%;
+        margin-left: 6%;
+        font-size: 13px;
+    }
+
+    .apf-mapa{
+        width: 430px;
+        margin-left: 6%;
+    }
+
+    .psp-mapa{
+        width: 430px;
+        margin-left: 6%;
+    }
+
+    .judiciaria-mapa{
+        width: 430px;
+        margin-left: 6%;
+    }  
+}
+
+/*projetor*/
+@media (max-width: 1024px){
+    /*NAVBAR*/
+    header{
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background-color: white;
+        width: 1344px;
+    }
+
+    .logo__header{
+        margin-left: 10%;
+    }
+
+    ul{
+        margin-left: 31%;
+    }
+
+    ul > a{
+        position: relative;
+        color: black;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif; 
+        padding: 12px;   
+        text-decoration: none;
+    }
+
+    ul > a:hover{
+        color: grey;
+        cursor: pointer;
+    }
+
+    ul > a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: grey;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    ul > a:hover::before {
+        transform: scaleX(1);
+    }
+    /*NAVBAR*/
+
     /*Header Título*/
     .titulo__informativo{
         color: white;
@@ -786,28 +1094,6 @@ ul > a:hover::before {
     }
 /*JOGO*/
 
-    /*INFO PAGE*/
-    .instituicoes_container{
-        margin-top: 6%;
-    }
-    
-    .logo_psp{
-        margin-right: 50px;
-        margin-bottom: 25px;
-        width: 200px;
-        height: 100px;
-    }
-    
-    .logo_judiciaria{
-        width: 150px;
-        height: 150px;
-    }
-    
-    .logo_apf{
-        width: 250px;
-        height: 140px;
-    }
-    /*INFOS BOX*/
 
     /*INFO PAGE*/
     .info-page{
